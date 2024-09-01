@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Um pouco sobre mim, minhas habilidades profissionais e meus trabalhos realizados."/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>cd.dev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="menu_desk">
+            <nav class="nav_container">
+                <div class="logo_container">
+                    <img class="logo" src="./assets/logo.svg" width="100px" height="47px" alt="Logo do dev">
+                </div>
+                <div class="nav__menu">
+                    <a href="#about" class="nav__link">Sobre Mim</a>
+                    <a href="#skill-cards" class="nav__link">Habilidades</a>
+                    <a href="#portfolio" class="nav__link">Portfólio</a>
+                    <a href="#contact" class="nav__link">Contato</a>
+                </div>
+                <div class="menu_dir">
+                    <a href="" class="nav__cv">Download CV</a>
+                    <input type="checkbox" id="switch" class="switch_button">
+                    <label for="switch">
+                        <span><i class='bx bx-sun switch_ligth'></i></span>
+                    </label>
+                </div> 
+            </nav>
+        </div>
+        <div class="menu__mobile">
+            <div id="menu">
+                <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+                </div>
+                <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="#about">Sobre Mim</a></li>
+                    <li><a href="#skill-cards">Habilidades</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                </nav> 
+            </div>
+            <div class="menu-bg" id="menu-bg"></div>
+        
+            <div class="switch_theme">
+                <input type="checkbox" id="switch-theme" class="switch_button">
+                <label for="switch">
+                    <span><i class='bx bx-sun switch_ligth_mobile'></i></span>
+                </label>
+            </div> 
+        </div>
+
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero__text">
+                <h1>Olá! Eu sou <span style="color:#448FF2">Daniel</span>, um <br><span style="color:#93BF50">Dev Front End</span> com <br>habilidades em <br><span style="color:#F28627">UX DESIGN</span>.</h1>
+                <h2>Um "eterno aprendiz", apaixonado por tecnologia.</h2>
+                <div class="btn">
+                    <a class="btn1" href="#">Saiba Mais</a>
+                    <a class="btn2" href="#">Entre em Contato</a>
+                </div>
+            </div>
+            <img class="hero__img" src="./assets/Placeholder.png" alt="">
+        </section>
+        <section id="skill-cards" class="skill-cards">
+            <h2 class="title">Minhas Skills</h2>
+            <p class="subtitle">Um pouco do que já sei o do que tenho estudado ativamente</p>
+            <div class="container_sw swiper">
+                <div class="card-wrapper">
+                    <ul class="card-list swiper-wrapper">
+                        <li class="card-item swiper-slide">
+                            <a href="https://www.youtube.com/watch?v=ZY3-MFxVdEw" class="card-link">
+                                <img class="card-image" src="./assets/front-end.webp" alt="Desenvolvedor Fron End">
+                                <p class="badge">Front End</p>
+                                <h2 class="card-title">Saiba Mais</h2>
+                                <button class=" card-button material-symbols-rounded">arrow_forward</button>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="https://www.youtube.com/watch?v=zkoGJXGfxFM" class="card-link">
+                                <img class="card-image" src="./assets/ux.webp" alt="UX|UI Designer">
+                                <p class="badge">UX|UI Designer</p>
+                                <h2 class="card-title">Saiba Mais</h2>
+                                <button class=" card-button material-symbols-rounded">arrow_forward</button>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="https://www.youtube.com/watch?v=fiPfvylj6rk" class="card-link">
+                                <img class="card-image" src="./assets/back-end.webp" alt="Desenvolvedor Back End">
+                                <p class="badge">Back End</p>
+                                <h2 class="card-title">Saiba Mais</h2>
+                                <button class=" card-button material-symbols-rounded">arrow_forward</button>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="https://www.youtube.com/watch?v=vENfcQ5HSq0" class="card-link">
+                                <img class="card-image" src="./assets/dados.webp" alt="Analista de Dados">
+                                <p class="badge">Data Analitics</p>
+                                <h2 class="card-title">Saiba Mais</h2>
+                                <button class=" card-button material-symbols-rounded">arrow_forward</button>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="https://www.youtube.com/watch?v=6ocAksHG1AY" class="card-link">
+                                <img class="card-image" src="./assets/motion.webp" alt="Designer Gráfico">
+                                <p class="badge">Graphic Designer</p>
+                                <h2 class="card-title">Saiba Mais</h2>
+                                <button class=" card-button material-symbols-rounded">arrow_forward</button>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="portfolio">
+            <h2 class="title">Portfólio</h2>
+            <p class="subtitle">Alguns dos meus Projetos</p>
+            <div class="container_sw swiper">
+                <div class="card-wrapper">
+                    <ul class="card-list swiper-wrapper">
+                        <li class="card-item swiper-slide">
+                            <a href="#" class="card-link">
+                                <img class="card-image" src="./assets/Placeholder.png" alt="#">
+                                <p class="badge">Projeto 1</p>
+                                <h2 class="card-title">Lorem Ipsun Lorem Ipsun</h2>
+                                <button class=" card-button material-symbols-rounded">arrow_forward</button>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="#" class="card-link">
+                                <img class="card-image" src="./assets/Placeholder.png" alt="#">
+                                <p class="badge">Projeto 2</p>
+                                <h2 class="card-title">Lorem Ipsun Lorem Ipsun</h2>
+                                <button class=" card-button material-symbols-rounded">arrow_forward</button>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="#" class="card-link">
+                                <img class="card-image" src="./assets/Placeholder.png" alt="#">
+                                <p class="badge">Projeto 3</p>
+                                <h2 class="card-title">Lorem Ipsun Lorem Ipsun</h2>
+                                <button class=" card-button material-symbols-rounded">arrow_forward</button>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="#" class="card-link">
+                                <img class="card-image" src="./assets/Placeholder.png" alt="#">
+                                <p class="badge">Projeto 4</p>
+                                <h2 class="card-title">Lorem Ipsun Lorem Ipsun</h2>
+                                <button class=" card-button material-symbols-rounded">arrow_forward</button>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="#" class="card-link">
+                                <img class="card-image" src="./assets/Placeholder.png" alt="#">
+                                <p class="badge">Projeto 5</p>
+                                <h2 class="card-title">Lorem Ipsun Lorem Ipsun</h2>
+                                <button class=" card-button material-symbols-rounded">arrow_forward</button>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="title">Sobre Mim</h2>
+            <p class="subtitle just">Tenho 33 anos. Sou casado com a Liliane, pai do Eden, filho de dona Renilda e de seu José. Abaixo de Deus, minha família é meu maior bem. Desde que consigo lembrar sou apaixonado pela ideia de aprender coisas novas, desenvolver habilidades e me desafiar. Trabalhar com tecnologia sempre foi um alvo meu e já faço isso desde muito cedo, inicialmente trabalhando por bastante tempo com hardwares e redes de computador e nesse momento da minha vida entrando de cabeça no desenvolvimento de software e conteúdos web.  Nas horas vagas relaxo com livros ou com meus fones de ouvido, um futsal, uma resenha com amigos. Quando o assunto é trabalho sou exigente e muito comprometido, não me defino como perfeccionista mas alguém apegado a detalhes... "Meu melhor é o mínimo que posso fazer". </p>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="title">Contato</h2>
+                <p class="subtitle">Quer contratar meus serviços ou acompanhar meu trabalho?</p>
+                <form class="forms" action="#">
+                    <div class="form_iten">
+                        <label class="form_p" for="nome">Nome</label>
+                        <br>
+                        <br>
+                        <input class="form_input" type="text" id="nome" name="nome">
+                    </div>
+                    <div class="form_iten">
+                        <label class="form_p" for="email">E-mail</label>
+                        <br>
+                        <br>
+                        <input class="form_input" type="email" autocomplete="on" name="email" id="email">
+                    </div>
+                    <div class="form_iten">
+                        <label class="form_p" for="msg">Mensagem</label>
+                        <br>
+                        <br>
+                        <textarea class="form_input form_large" name="msg" id="msg" placeholder="Digite sua mensagem aqui"></textarea>
+                    </div>
+                </form>
+                <button class="form_button" type="submit">Enviar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_container">
+            <img class="logo" src="./assets/logo.svg" width="100px" height="47px" alt="Logo do dev">
+            <div class="footer_info">
+                <p><strong>Endereço:</strong></p>
+                <p>Rua Sônia Assis de Moura, 33 - Estrada das Barreiras</p>
+                <p>Salvador-BA - CEP 41.195-030</p>
+            </div>
+            <div class="footer_info">
+                <p><strong>Contato:</strong></p>
+                <p>(71) 98510-0205</p>
+                <p>cd.dev@hotmail.com</p>
+            </div>
+            <div class="footer_social">
+                <a href="#"><i class='bx bxl-linkedin-square social'></i>.</a>
+                <a href="#"><i class='bx bxl-github social'></i>.</a>
+                <a href="#"><i class='bx bxl-instagram-alt social' ></i>.</a>
+                <a href="#"><i class='bx bxl-whatsapp-square social' ></i>.</a>
+            </div>
+            <div class="footer_copy">
+                <hr>
+                <p class="footer__text">&copy; 2024 CDEV. Desenvolvido por Carlos Daniel - Aluno da Turma 524 de ADS da UNINTESE.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="./index.js"></script>
+    <script src="hamburguer.js"></script>
+</body>
+</html>
